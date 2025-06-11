@@ -1,13 +1,30 @@
 {
-  "name": "react-tut",
+  "name": "expense-tracker",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
+  "version": "1.0.0",
+  "description": "A modern, responsive expense tracking application built with React and Vite",
+  "keywords": ["react", "vite", "expense-tracker", "javascript", "frontend"],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/expense-tracker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/expense-tracker/issues"
+  },
+  "homepage": "https://github.com/yourusername/expense-tracker#readme",
+  "type": "module",  "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "lint:fix": "eslint src --ext js,jsx --fix",
+    "preview": "vite preview",
+    "serve": "vite preview",
+    "check": "npm run lint && npm run build",
+    "clean": "rm -rf dist node_modules/.vite",
+    "audit": "npm audit",
+    "audit:fix": "npm audit fix"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
